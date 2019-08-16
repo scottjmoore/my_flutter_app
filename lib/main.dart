@@ -6,13 +6,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      title: 'div-int software',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
+          title: const Text('div-int software'),
         ),
         body: const Center(
-          child: const Text('Hello World'),
+          child: const Text('Hello World\nII', textAlign: TextAlign.center),
         ),
       ),
     );
