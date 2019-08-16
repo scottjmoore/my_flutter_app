@@ -43,8 +43,8 @@ class RandomWordsState extends State<RandomWords> {
     return ListTile(
       title: Text(wordPair.asPascalCase, style: _biggerFont),
       trailing: Icon(
-        alreadySaved ? Icons.favorite : Icons.favorite_border,
-        color: alreadySaved ? Colors.red : null,
+        alreadySaved ? Icons.thumb_up : Icons.thumb_down,
+        color: alreadySaved ? Colors.greenAccent[200] : Colors.redAccent[200],
       ),
       onTap: () {
         setState(() {
