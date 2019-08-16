@@ -1,4 +1,3 @@
-import 'package:english_words/english_words.dart' as prefix0;
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
@@ -32,7 +31,7 @@ class RandomWordsState extends State<RandomWords> {
 
           final index = i ~/ 2;
           if (index >= _suggestions.length) {
-            _suggestions.addAll(prefix0.generateWordPairs().take(10));
+            _suggestions.addAll(generateWordPairs().take(10));
           }
           return _buildRow(_suggestions[index]);
         });
@@ -54,6 +53,11 @@ class RandomWordsState extends State<RandomWords> {
           } else {
             _saved.add(wordPair);
           }
+        });
+      },
+      onLongPress: () {
+        setState(() {
+          _suggestions.remove(wordPair);
         });
       },
     );
