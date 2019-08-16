@@ -1,7 +1,6 @@
 import 'package:english_words/english_words.dart' as prefix0;
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
-import 'package:flutter/semantics.dart';
 
 void main() => runApp(MyApp());
 
